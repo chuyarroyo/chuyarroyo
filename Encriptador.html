@@ -2,60 +2,52 @@
 
 <html lang="es">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <script src="archivo.js"></script>
+</head>
 
   <body>
-    
-    <div class="caja">
-      <img  src="imagenes/logo.png"  id="logo">
+      <div class="caja">
+          <img src="imagenes/logo.png" id="logo">
 
-      <div class="area">
-        <label for="ingreseeltextoaqui"></label>
-        <input id="texto" placeholder="Ingrese el texto aquí">
-      </div> 
+          <div class="Rectangulo"></div>
 
-      <div class="Rectangulo"></div>
-        
-      <div>
-        <img src="imagenes/munheco.png"  id="munheco">
+          <div>
+              <img src="imagenes/munheco.png" id="munheco">
+          </div>
+
+          <div class="rectangulo-in">
+              <h2 type="text" id="texto_encontrado">Ningún mensaje fue encontrado</h2>
+              <p type="text" id="texto_resultado" class="texto-deseado">Ingresa el texto que desees encriptar o desencriptar</p>
+          </div>
+
+          <div>
+              <div class="area">
+                  <label for="ingreseeltextoaqui"></label>
+                  <input id="texto" placeholder="Ingrese el texto aquí">
+              </div>
+
+              <div class="biexclamation">
+                  <p class="minusculas">Solo letras minúsculas y sin acento</p>
+              </div>
+
+              <div class="areabotones">
+                  <div class="boton1">
+                      <button type="button" id="encriptar" onclick="mi_metodo_de_encriptar()">Encriptar</button>
+                  </div>
+
+                  <div class="boton2">
+                      <button type="button" id="desencriptar" onclick="mi_metodo_de_desencriptar()">Desencriptar</button>
+                  </div>
+              </div>
+          </div>
+
+          <div>
+              <img class="imagen-bi" src="imagenes/bi_exclamation-circle-fill.png">
+          </div>
       </div>
-
-      <div class="rectangulo-in">
-        <h2 type="text">Ningún mensaje fue encontrado</h2>
-        <p type="text" class="texto-deseado">Ingresa el texto que desees encriptar o desencriptar</p>
-      </div>
-
-      
-
-      <div class="areabotones">
-        <div class="boton1">
-          <button id="encriptar">Encriptar</button>
-        </div>
-
-        <div class="boton2">
-          <button id="desencriptar">Desencriptar</button>
-        </div>
-
-      </div>
-
-      <div class="biexclamation">
-        <p class="minusculas">Solo letras minúsculas y sin acento</p>
-      </div>
-
-      <div>
-        <img class="imagen-bi" src="imagenes/bi_exclamation-circle-fill.png">
-      </div>
-      
-      
-
-    </div>
-
-
   </body>
-  <script src="archivo.js"></script>
-
 </html>
