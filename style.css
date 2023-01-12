@@ -2,7 +2,8 @@
   position: relative;
   width: 1440px;
   height: 1024px;
-  background: #F3F5FC;  
+  background-image: url("imagenes/mar.jpg"); 
+  background-size: 100%; 
 }
 /* Logo */
 img {
@@ -21,32 +22,7 @@ img {
 
 /*Solo letras minuscula*/
 
-p {
-  width: 225px;
-  height: 18px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #495057;
-  opacity: 0.8;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-}
-
-#biexclamation {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 230px;
-  top: 851px;
-  color: #495057;
-}
-
-.msinacento {
+.biexclamation {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,25 +31,56 @@ p {
   position: absolute;
   width: 229px;
   height: 18px;
-  left: 250px; 
+  left: 260px; 
   top: 851px;
+
 }
 
+.imagen-bi {
+  width: 16px;
+  height: 16px;
+  left: 240px;
+  top: 851px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+}
+
+.minusculas {
+  width: 225px;
+  height: 18px;
+  font-family: revert;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #212427;
+  opacity: 0.9;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.area {
+  opacity: 0.2;
+}
 
 #texto {
   position: absolute;
   width: 577px;
-  height: 48px;
+  height: 148px;
   left: 240px;
   top: 168px;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: revert;
+  font-style: italic;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
   color: #0a3871;
   border: none;
-  background: #F3F5FC;
+  /* background: #F3F5FC; */
   
 }
 
@@ -91,13 +98,58 @@ p {
   height: 944px;
   left: 1000px;
   top: 40px;
-  background: #ffffff;
+  background: linear-gradient(#ffffff, #0A3871); 
   box-shadow: 0px 24px 32px -8px;
   border-radius: 32px;
 }
 
+.rectangulo-in {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: 336px;
+  left: 1032px;
+  top: 619px;
+}
+
+h2 {
+  width: 336px;
+  height: 58px;
+  font-family: revert;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.texto-deseado {
+  width: 336px;
+  height: 48px;
+  font-family: revert;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #e3e8ec;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
 /* botones encriptar/desencriptar */
-.areaboton1 {
+.areabotones {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -112,17 +164,19 @@ p {
 }
 
 
-
 .boton1 {
   display: flex;
   flex-direction: row;
   align-items:flex-start;
-  padding: 24px;
   gap: 8px;
   width: 328px;
   height: 67px;
   background: #0a3871;
+  box-shadow: 0px 24px 32px -8px;
   border-radius: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
   
 }
 
@@ -130,13 +184,16 @@ p {
   display: flex;
   flex-direction: row;
   align-items:flex-start;
-  padding: 24px;
   gap: 8px;
   width: 328px;
   height: 67px;
   background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px;
   border-radius: 24px;
-  
+  flex: none;
+  order: 0;
+  flex-grow: 0; 
+
 }
 
 #encriptar {
@@ -146,9 +203,16 @@ p {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1px;
+  line-height: 19px;
   text-align: center;
   color: #ffffff;
+  background-color: #0A3871;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
 }
 
 #desencriptar {
@@ -158,11 +222,19 @@ p {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1px;
+  line-height: 19px;
   text-align: center;
   color: #0A3871;
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
 }
 
 
+ 
 
 
